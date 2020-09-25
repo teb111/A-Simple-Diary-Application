@@ -1,0 +1,37 @@
+body {
+    background: #170312;
+    color: #f7fff793;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.login-container {
+    padding: 100px;
+    text-align: center;
+}
+
+.card {
+    background: none;
+}
+
+.login-text {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.login-btn {
+  padding: 10px;
+  border-radius: 15px;
+  display: block;
+  height: auto;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  background: none;
+  transition: 0.7s ease-in-out;
+}
+
+.login-btn:hover {
+    background: #124559;
+}

@@ -1,0 +1,22 @@
+<h5>Welcome {{name}}</h5>
+<div class="diary-cards">
+
+    {{#each diaries}}
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" width="150" height="200" src="{{coverImagePath}}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4 center">{{title}}</i></span>
+       
+        <a href="/diary/{{_id}}" class="button">Read more &nbsp; <i class="fas fa-edit fa-small"></i></a>
+     
+    </div>
+  </div>
+
+  
+  {{/each}}
+
+</div>
+
+

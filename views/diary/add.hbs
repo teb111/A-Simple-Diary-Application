@@ -1,0 +1,28 @@
+<h3>Add Story</h3>
+<div class="row">
+    <form action="/diary" method="POST" enctype="multipart/form-data" class="col s12">
+      <div class="row">
+         <div class="input-field">
+             <input type="text" id="title" name="title">
+             <label for="title">Title</label>
+         </div>
+     </div>
+
+     <div class="row">
+         <div class="input-field">
+             <h5>Tell the World Your Story</h5>
+             <textarea name="body" id="body"></textarea>
+         </div>
+     </div>
+
+      <div class="row"> 
+          <div class="input-field">
+                <input type="file" name="image" class="filepond">
+            </div> 
+
+     <div class="row">
+         <input type="submit" value="Save" class="btn">
+         <a href="/dashboard" class="btn orange">Cancel</a>
+     </div>
+    </form>
+</div>

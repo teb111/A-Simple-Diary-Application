@@ -1,0 +1,25 @@
+<div class="action-btns">
+ <a href="/diary/edit/{{diary._id}}" class="button"><span>Edit &NonBreakingSpace; <i class="fas fa-edit fa-small"></i></span></a>
+  
+  <form action="/diary/delete/{{diary._id}}" method="POST" id="delete-diary">
+    <input type="hidden" name="_method" value="DELETE">
+    <button class="button" type="submit">Delete &NonBreakingSpace; <i class="fas fa-trash fa-small"></i></button>
+   </form>
+    
+</div>
+<div class="row">
+    <div class="col s12 m12">
+        <a href="/dashboard" class="link-title"><h3 class="title"><i class="fas fa-link"></i> &nbsp; {{diary.title}}</h3></a>
+        <div class="card story">
+            <div class="card-content">
+                 <img class="show-image" src="{{diary.coverImagePath}}">
+                 <br> <br>
+                 <div class="card-words">
+
+               {{{diary.body}}}
+                 </div>
+            </div>
+        </div>
+    </div>
+  
+</div>
